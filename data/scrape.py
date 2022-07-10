@@ -1,4 +1,6 @@
 import requests, json
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
@@ -18,9 +20,8 @@ def DataToCSV():
     ratings = []
     metascores = []
 
-    # pages = np.arange(1, 7145, 50)
-    # pages = np.arange(1, 101, 50)
-    pages  = np.arange(1,2,1)
+    pages = np.arange(1, 7145, 50)
+    # pages  = np.arange(1,2,1)
 
     for page in pages:
 
@@ -57,7 +58,7 @@ def DataToCSV():
             ratings.append(rating)
             
             # Scraping the metascore
-            m_score = container.find('span', class_='metascore').text if container.find('span', class_='metascore') else '-'
+            m_score = container.find('span', class_='metascore').text if container.find('span', class_='metascore') else 'Na'
             metascores.append(m_score)
 
     movies = pd.DataFrame({'Title':titles,
@@ -72,12 +73,24 @@ def DataToCSV():
     return movies
 
 def GetDataByURL(link, dataType):
+
+    session = requests.Session()
+    retry = Retry(connect=3, backoff_factor=0.5)
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+
     URL = f"https://www.imdb.com{link}"
-    page = requests.get(URL)
-    soup = BeautifulSoup(page.content, "html.parser")
+    session = requests.get(URL)
+    soup = BeautifulSoup(session.content, "html.parser")
     results = soup.find("script", type="application/ld+json")
-    data = json.loads(results.string)
-    return data[dataType]
+
+    if results != None:
+        data = json.loads(results.string)
+        return data[dataType]
+
+    else:
+        return "Na"
 
 def main():
     movies = DataToCSV()
