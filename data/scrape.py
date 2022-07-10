@@ -13,18 +13,16 @@ def DataToCSV():
     titles = []
     years = []
     genres = []
-    time = []
-    imdb_ratings = []
-    links = []
+    ratings = []
+    movieIDS = []
     metascores = []
-    votes = []
-    us_gross = []
 
     # pages = np.arange(1, 7145, 50)
     # pages = np.arange(1, 101, 50)
     pages  = np.arange(1,2,1)
 
     for page in pages:
+
         URL = f"https://www.imdb.com/search/title/?title_type=feature&num_votes=10000,&countries=us&sort=user_rating,desc&start={page}&ref_=adv_nxt"
         page = requests.get(URL)
         
@@ -32,6 +30,7 @@ def DataToCSV():
         movie_div = soup.find_all("div", class_="lister-item mode-advanced")
 
         for container in movie_div:
+
             # Scraping the movie's name
             name = container.h3.a.text
             titles.append(name)
@@ -40,43 +39,29 @@ def DataToCSV():
             year = container.h3.find('span', class_='lister-item-year').text
             years.append(year)
 
-            # Scraping the movie's length
-            runtime = container.find('span', class_='runtime').text if container.p.find('span', class_='runtime') else '-'
-            time.append(runtime)
-            
             # Scraping the rating
-            imdb = float(container.strong.text)
-            imdb_ratings.append(imdb)
+            rating = float(container.strong.text)
+            ratings.append(rating)
 
             # Get the link
-            link = container.h3.find('a', href = re.compile(r'[/]([a-z]|[A-Z])\w+')).attrs['href']
-
-            links.append(link)
+            movieID = container.h3.find('a', href = re.compile(r'[/]([a-z]|[A-Z])\w+')).attrs['href']
+            movieIDS.append(movieID)
             
             # Scraping the metascore
             m_score = container.find('span', class_='metascore').text if container.find('span', class_='metascore') else '-'
             metascores.append(m_score)
 
-            # Scraping votes and gross earnings
-            nv = container.find_all('span', attrs={'name':'nv'})
-            vote = nv[0].text
-            votes.append(vote)
-            grosses = nv[1].text if len(nv) > 1 else '-'
-            us_gross.append(grosses)
-
-            genre = GetDataByURL(link)
+            # Scrape the genres from the movie ID
+            genre = GetDataByURL(movieID)
             genres.append(genre)
 
 
-    movies = pd.DataFrame({'movie':titles,
-                        'year':years,
-                        'genre':genres,
-                        'time_minute':time,
-                        'imdb_rating':imdb_ratings,
-                        'links':links,
-                        'metascore':metascores,
-                        'vote':votes,
-                        'gross_earning':us_gross
+    movies = pd.DataFrame({'Title':titles,
+                        'Year':years,
+                        'Genre':genres,
+                        'Rating':ratings,
+                        'MovieID':movieIDS,
+                        'Metascore':metascores,
     })
 
     return movies

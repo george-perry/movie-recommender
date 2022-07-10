@@ -1,51 +1,51 @@
-,movie,year,genre,time_minute,imdb_rating,links,metascore,vote,gross_earning
-0,The Shawshank Redemption,(1994),['Drama'],142 min,9.3,/title/tt0111161/,81        ,"2,601,917",$28.34M
-1,The Godfather,(1972),"['Crime', 'Drama']",175 min,9.2,/title/tt0068646/,100        ,"1,797,370",$134.97M
-2,The Dark Knight,(2008),"['Action', 'Crime', 'Drama']",152 min,9.0,/title/tt0468569/,84        ,"2,573,361",$534.86M
-3,The Lord of the Rings: The Return of the King,(2003),"['Action', 'Adventure', 'Drama']",201 min,9.0,/title/tt0167260/,94        ,"1,786,873",$377.85M
-4,Schindler's List,(1993),"['Biography', 'Drama', 'History']",195 min,9.0,/title/tt0108052/,94        ,"1,323,147",$96.90M
-5,The Godfather Part II,(1974),"['Crime', 'Drama']",202 min,9.0,/title/tt0071562/,90        ,"1,238,294",$57.30M
-6,12 Angry Men,(1957),"['Crime', 'Drama']",96 min,9.0,/title/tt0050083/,96        ,"768,690",$4.36M
-7,Pulp Fiction,(1994),"['Crime', 'Drama']",154 min,8.9,/title/tt0110912/,94        ,"1,994,428",$107.93M
-8,Kill Bill: The Whole Bloody Affair,(2011),"['Action', 'Crime', 'Thriller']",247 min,8.8,/title/tt6019206/,-,"10,197",-
-9,Inception,(2010),"['Action', 'Adventure', 'Sci-Fi']",148 min,8.8,/title/tt1375666/,74        ,"2,283,048",$292.58M
-10,The Lord of the Rings: The Two Towers,(2002),"['Action', 'Adventure', 'Drama']",179 min,8.8,/title/tt0167261/,87        ,"1,613,775",$342.55M
-11,Fight Club,(1999),['Drama'],139 min,8.8,/title/tt0137523/,66        ,"2,049,391",$37.03M
-12,The Lord of the Rings: The Fellowship of the Ring,(2001),"['Action', 'Adventure', 'Drama']",178 min,8.8,/title/tt0120737/,92        ,"1,807,955",$315.54M
-13,Forrest Gump,(1994),"['Drama', 'Romance']",142 min,8.8,/title/tt0109830/,82        ,"2,010,234",$330.25M
-14,The Matrix,(1999),"['Action', 'Sci-Fi']",136 min,8.7,/title/tt0133093/,73        ,"1,867,955",$171.48M
-15,Goodfellas,(1990),"['Biography', 'Crime', 'Drama']",145 min,8.7,/title/tt0099685/,90        ,"1,125,230",$46.84M
-16,Star Wars: Episode V - The Empire Strikes Back,(1980),"['Action', 'Adventure', 'Fantasy']",124 min,8.7,/title/tt0080684/,82        ,"1,259,292",$290.48M
-17,One Flew Over the Cuckoo's Nest,(1975),['Drama'],133 min,8.7,/title/tt0073486/,84        ,"987,657",$112.00M
-18,Top Gun: Maverick,(2022),"['Action', 'Drama']",130 min,8.6,/title/tt1745960/,78        ,"188,014",-
-19,Interstellar,(2014),"['Adventure', 'Drama', 'Sci-Fi']",169 min,8.6,/title/tt0816692/,74        ,"1,744,411",$188.02M
-20,Saving Private Ryan,(1998),"['Drama', 'War']",169 min,8.6,/title/tt0120815/,91        ,"1,354,655",$216.54M
-21,The Green Mile,(1999),"['Crime', 'Drama', 'Fantasy']",189 min,8.6,/title/tt0120689/,61        ,"1,264,925",$136.80M
-22,Se7en,(1995),"['Crime', 'Drama', 'Mystery']",127 min,8.6,/title/tt0114369/,65        ,"1,597,328",$100.13M
-23,Terminator 2: Judgment Day,(1991),"['Action', 'Sci-Fi']",137 min,8.6,/title/tt0103064/,75        ,"1,073,475",$204.84M
-24,The Silence of the Lambs,(1991),"['Crime', 'Drama', 'Thriller']",118 min,8.6,/title/tt0102926/,85        ,"1,392,872",$130.74M
-25,Star Wars,(1977),"['Action', 'Adventure', 'Fantasy']",121 min,8.6,/title/tt0076759/,90        ,"1,331,451",$322.74M
-26,It's a Wonderful Life,(1946),"['Drama', 'Family', 'Fantasy']",130 min,8.6,/title/tt0038650/,89        ,"446,932",-
-27,Whiplash,(2014),"['Drama', 'Music']",106 min,8.5,/title/tt2582802/,88        ,"816,913",$13.09M
-28,The Prestige,(2006),"['Drama', 'Mystery', 'Sci-Fi']",130 min,8.5,/title/tt0482571/,66        ,"1,300,165",$53.09M
-29,The Departed,(2006),"['Crime', 'Drama', 'Thriller']",151 min,8.5,/title/tt0407887/,85        ,"1,293,232",$132.38M
-30,Gladiator,(2000),"['Action', 'Adventure', 'Drama']",155 min,8.5,/title/tt0172495/,67        ,"1,461,763",$187.71M
-31,American History X,(1998),"['Crime', 'Drama']",119 min,8.5,/title/tt0120586/,62        ,"1,100,839",$6.72M
-32,The Usual Suspects,(1995),"['Crime', 'Drama', 'Mystery']",106 min,8.5,/title/tt0114814/,77        ,"1,065,008",$23.34M
-33,Léon: The Professional,(1994),"['Action', 'Crime', 'Drama']",110 min,8.5,/title/tt0110413/,64        ,"1,132,516",$19.50M
-34,The Lion King,(1994),"['Animation', 'Adventure', 'Drama']",88 min,8.5,/title/tt0110357/,88        ,"1,030,641",$422.78M
-35,Back to the Future,(1985),"['Adventure', 'Comedy', 'Sci-Fi']",116 min,8.5,/title/tt0088763/,87        ,"1,168,120",$210.61M
-36,Apocalypse Now,(1979),"['Drama', 'Mystery', 'War']",147 min,8.5,/title/tt0078788/,94        ,"654,159",$83.47M
-37,Alien,(1979),"['Horror', 'Sci-Fi']",117 min,8.5,/title/tt0078748/,89        ,"858,554",$78.90M
-38,Once Upon a Time in the West,(1968),['Western'],165 min,8.5,/title/tt0064116/,80        ,"324,442",$5.32M
-39,Psycho,(1960),"['Horror', 'Mystery', 'Thriller']",109 min,8.5,/title/tt0054215/,97        ,"656,532",$32.00M
-40,Rear Window,(1954),"['Mystery', 'Thriller']",112 min,8.5,/title/tt0047396/,100        ,"482,599",$36.76M
-41,Casablanca,(1942),"['Drama', 'Romance', 'War']",102 min,8.5,/title/tt0034583/,100        ,"561,784",$1.02M
-42,Modern Times,(1936),"['Comedy', 'Drama', 'Romance']",87 min,8.5,/title/tt0027977/,96        ,"238,342",$0.16M
-43,City Lights,(1931),"['Comedy', 'Drama', 'Romance']",87 min,8.5,/title/tt0021749/,99        ,"182,239",$0.02M
-44,Hamilton,(2020),"['Biography', 'Drama', 'History']",160 min,8.4,/title/tt8503618/,90        ,"88,826",-
-45,Joker,(I) (2019),"['Crime', 'Drama', 'Thriller']",122 min,8.4,/title/tt7286456/,59        ,"1,206,048",$335.45M
-46,Spider-Man: Into the Spider-Verse,(2018),"['Animation', 'Action', 'Adventure']",117 min,8.4,/title/tt4633694/,87        ,"497,538",$190.24M
-47,Avengers: Endgame,(2019),"['Action', 'Adventure', 'Drama']",181 min,8.4,/title/tt4154796/,78        ,"1,066,486",$858.37M
-48,Avengers: Infinity War,(2018),"['Action', 'Adventure', 'Sci-Fi']",149 min,8.4,/title/tt4154756/,68        ,"1,026,163",$678.82M
-49,Coco,(I) (2017),"['Animation', 'Adventure', 'Comedy']",105 min,8.4,/title/tt2380307/,81        ,"482,518",$209.73M
+,Title,Year,Genre,Rating,MovieID,Metascore
+0,The Shawshank Redemption,(1994),['Drama'],9.3,/title/tt0111161/,81        
+1,The Godfather,(1972),"['Crime', 'Drama']",9.2,/title/tt0068646/,100        
+2,The Dark Knight,(2008),"['Action', 'Crime', 'Drama']",9.0,/title/tt0468569/,84        
+3,The Lord of the Rings: The Return of the King,(2003),"['Action', 'Adventure', 'Drama']",9.0,/title/tt0167260/,94        
+4,Schindler's List,(1993),"['Biography', 'Drama', 'History']",9.0,/title/tt0108052/,94        
+5,The Godfather: Part II,(1974),"['Crime', 'Drama']",9.0,/title/tt0071562/,90        
+6,12 Angry Men,(1957),"['Crime', 'Drama']",9.0,/title/tt0050083/,96        
+7,Pulp Fiction,(1994),"['Crime', 'Drama']",8.9,/title/tt0110912/,94        
+8,Kill Bill: The Whole Bloody Affair,(2011),"['Action', 'Crime', 'Thriller']",8.8,/title/tt6019206/,-
+9,Inception,(2010),"['Action', 'Adventure', 'Sci-Fi']",8.8,/title/tt1375666/,74        
+10,The Lord of the Rings: The Two Towers,(2002),"['Action', 'Adventure', 'Drama']",8.8,/title/tt0167261/,87        
+11,Fight Club,(1999),['Drama'],8.8,/title/tt0137523/,66        
+12,The Lord of the Rings: The Fellowship of the Ring,(2001),"['Action', 'Adventure', 'Drama']",8.8,/title/tt0120737/,92        
+13,Forrest Gump,(1994),"['Drama', 'Romance']",8.8,/title/tt0109830/,82        
+14,The Matrix,(1999),"['Action', 'Sci-Fi']",8.7,/title/tt0133093/,73        
+15,Goodfellas,(1990),"['Biography', 'Crime', 'Drama']",8.7,/title/tt0099685/,90        
+16,Star Wars: Episode V - The Empire Strikes Back,(1980),"['Action', 'Adventure', 'Fantasy']",8.7,/title/tt0080684/,82        
+17,One Flew Over the Cuckoo's Nest,(1975),['Drama'],8.7,/title/tt0073486/,84        
+18,Top Gun: Maverick,(2022),"['Action', 'Drama']",8.6,/title/tt1745960/,78        
+19,Interstellar,(2014),"['Adventure', 'Drama', 'Sci-Fi']",8.6,/title/tt0816692/,74        
+20,Saving Private Ryan,(1998),"['Drama', 'War']",8.6,/title/tt0120815/,91        
+21,The Green Mile,(1999),"['Crime', 'Drama', 'Fantasy']",8.6,/title/tt0120689/,61        
+22,Se7en,(1995),"['Crime', 'Drama', 'Mystery']",8.6,/title/tt0114369/,65        
+23,Terminator 2: Judgment Day,(1991),"['Action', 'Sci-Fi']",8.6,/title/tt0103064/,75        
+24,The Silence of the Lambs,(1991),"['Crime', 'Drama', 'Thriller']",8.6,/title/tt0102926/,85        
+25,Star Wars,(1977),"['Action', 'Adventure', 'Fantasy']",8.6,/title/tt0076759/,90        
+26,It's a Wonderful Life,(1946),"['Drama', 'Family', 'Fantasy']",8.6,/title/tt0038650/,89        
+27,Whiplash,(2014),"['Drama', 'Music']",8.5,/title/tt2582802/,88        
+28,The Prestige,(2006),"['Drama', 'Mystery', 'Sci-Fi']",8.5,/title/tt0482571/,66        
+29,The Departed,(2006),"['Crime', 'Drama', 'Thriller']",8.5,/title/tt0407887/,85        
+30,Gladiator,(2000),"['Action', 'Adventure', 'Drama']",8.5,/title/tt0172495/,67        
+31,American History X,(1998),"['Crime', 'Drama']",8.5,/title/tt0120586/,62        
+32,The Usual Suspects,(1995),"['Crime', 'Drama', 'Mystery']",8.5,/title/tt0114814/,77        
+33,Léon: The Professional,(1994),"['Action', 'Crime', 'Drama']",8.5,/title/tt0110413/,64        
+34,The Lion King,(1994),"['Animation', 'Adventure', 'Drama']",8.5,/title/tt0110357/,88        
+35,Back to the Future,(1985),"['Adventure', 'Comedy', 'Sci-Fi']",8.5,/title/tt0088763/,87        
+36,Apocalypse Now,(1979),"['Drama', 'Mystery', 'War']",8.5,/title/tt0078788/,94        
+37,Alien,(1979),"['Horror', 'Sci-Fi']",8.5,/title/tt0078748/,89        
+38,Once Upon a Time in the West,(1968),['Western'],8.5,/title/tt0064116/,80        
+39,Psycho,(1960),"['Horror', 'Mystery', 'Thriller']",8.5,/title/tt0054215/,97        
+40,Rear Window,(1954),"['Mystery', 'Thriller']",8.5,/title/tt0047396/,100        
+41,Casablanca,(1942),"['Drama', 'Romance', 'War']",8.5,/title/tt0034583/,100        
+42,Modern Times,(1936),"['Comedy', 'Drama', 'Romance']",8.5,/title/tt0027977/,96        
+43,City Lights,(1931),"['Comedy', 'Drama', 'Romance']",8.5,/title/tt0021749/,99        
+44,Hamilton,(2020),"['Biography', 'Drama', 'History']",8.4,/title/tt8503618/,90        
+45,Joker,(I) (2019),"['Crime', 'Drama', 'Thriller']",8.4,/title/tt7286456/,59        
+46,Spider-Man: Into the Spider-Verse,(2018),"['Animation', 'Action', 'Adventure']",8.4,/title/tt4633694/,87        
+47,Avengers: Endgame,(2019),"['Action', 'Adventure', 'Drama']",8.4,/title/tt4154796/,78        
+48,Avengers: Infinity War,(2018),"['Action', 'Adventure', 'Sci-Fi']",8.4,/title/tt4154756/,68        
+49,Coco,(I) (2017),"['Animation', 'Adventure', 'Comedy']",8.4,/title/tt2380307/,81        
