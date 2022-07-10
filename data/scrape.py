@@ -12,9 +12,10 @@ def DataToCSV():
 
     titles = []
     years = []
-    genres = []
-    ratings = []
     movieIDS = []
+    genres = []
+    keywords = []
+    ratings = []
     metascores = []
 
     # pages = np.arange(1, 7145, 50)
@@ -39,49 +40,44 @@ def DataToCSV():
             year = container.h3.find('span', class_='lister-item-year').text
             years.append(year)
 
+            # Scrape the movie ID
+            movieID = container.h3.find('a', href = re.compile(r'[/]([a-z]|[A-Z])\w+')).attrs['href']
+            movieIDS.append(movieID)
+
+            # Scrape the genres from the movie ID
+            genre = GetDataByURL(movieID, 'genre')
+            genres.append(genre)
+
+            # Scrape the keywords from the movie ID
+            keyword = GetDataByURL(movieID, 'keywords')
+            keywords.append(keyword.split(','))
+
             # Scraping the rating
             rating = float(container.strong.text)
             ratings.append(rating)
-
-            # Get the link
-            movieID = container.h3.find('a', href = re.compile(r'[/]([a-z]|[A-Z])\w+')).attrs['href']
-            movieIDS.append(movieID)
             
             # Scraping the metascore
             m_score = container.find('span', class_='metascore').text if container.find('span', class_='metascore') else '-'
             metascores.append(m_score)
 
-            # Scrape the genres from the movie ID
-            genre = GetDataByURL(movieID)
-            genres.append(genre)
-
-
     movies = pd.DataFrame({'Title':titles,
                         'Year':years,
-                        'Genre':genres,
-                        'Rating':ratings,
                         'MovieID':movieIDS,
+                        'Genres':genres,
+                        'Keywords':keywords,
+                        'Rating':ratings,
                         'Metascore':metascores,
     })
 
     return movies
 
-def GetDataByURL(link):
+def GetDataByURL(link, dataType):
     URL = f"https://www.imdb.com{link}"
     page = requests.get(URL)
     soup = BeautifulSoup(page.content, "html.parser")
     results = soup.find("script", type="application/ld+json")
     data = json.loads(results.string)
-    return data['genre']
-
-# def GetDataBySearch():
-#     movie = "the+departed"
-#     URL = f"https://www.imdb.com/find?q={movie}&ref_=nv_sr_sm"
-#     page = requests.get(URL)
-#     soup = BeautifulSoup(page.content, "html.parser")
-#     movie_div = soup.find_all("tr", class_="findResult odd")
-#     print(movie_div)
-
+    return data[dataType]
 
 def main():
     movies = DataToCSV()

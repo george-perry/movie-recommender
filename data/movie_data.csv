@@ -1,51 +1,51 @@
-,Title,Year,Genre,Rating,MovieID,Metascore
-0,The Shawshank Redemption,(1994),['Drama'],9.3,/title/tt0111161/,81        
-1,The Godfather,(1972),"['Crime', 'Drama']",9.2,/title/tt0068646/,100        
-2,The Dark Knight,(2008),"['Action', 'Crime', 'Drama']",9.0,/title/tt0468569/,84        
-3,The Lord of the Rings: The Return of the King,(2003),"['Action', 'Adventure', 'Drama']",9.0,/title/tt0167260/,94        
-4,Schindler's List,(1993),"['Biography', 'Drama', 'History']",9.0,/title/tt0108052/,94        
-5,The Godfather: Part II,(1974),"['Crime', 'Drama']",9.0,/title/tt0071562/,90        
-6,12 Angry Men,(1957),"['Crime', 'Drama']",9.0,/title/tt0050083/,96        
-7,Pulp Fiction,(1994),"['Crime', 'Drama']",8.9,/title/tt0110912/,94        
-8,Kill Bill: The Whole Bloody Affair,(2011),"['Action', 'Crime', 'Thriller']",8.8,/title/tt6019206/,-
-9,Inception,(2010),"['Action', 'Adventure', 'Sci-Fi']",8.8,/title/tt1375666/,74        
-10,The Lord of the Rings: The Two Towers,(2002),"['Action', 'Adventure', 'Drama']",8.8,/title/tt0167261/,87        
-11,Fight Club,(1999),['Drama'],8.8,/title/tt0137523/,66        
-12,The Lord of the Rings: The Fellowship of the Ring,(2001),"['Action', 'Adventure', 'Drama']",8.8,/title/tt0120737/,92        
-13,Forrest Gump,(1994),"['Drama', 'Romance']",8.8,/title/tt0109830/,82        
-14,The Matrix,(1999),"['Action', 'Sci-Fi']",8.7,/title/tt0133093/,73        
-15,Goodfellas,(1990),"['Biography', 'Crime', 'Drama']",8.7,/title/tt0099685/,90        
-16,Star Wars: Episode V - The Empire Strikes Back,(1980),"['Action', 'Adventure', 'Fantasy']",8.7,/title/tt0080684/,82        
-17,One Flew Over the Cuckoo's Nest,(1975),['Drama'],8.7,/title/tt0073486/,84        
-18,Top Gun: Maverick,(2022),"['Action', 'Drama']",8.6,/title/tt1745960/,78        
-19,Interstellar,(2014),"['Adventure', 'Drama', 'Sci-Fi']",8.6,/title/tt0816692/,74        
-20,Saving Private Ryan,(1998),"['Drama', 'War']",8.6,/title/tt0120815/,91        
-21,The Green Mile,(1999),"['Crime', 'Drama', 'Fantasy']",8.6,/title/tt0120689/,61        
-22,Se7en,(1995),"['Crime', 'Drama', 'Mystery']",8.6,/title/tt0114369/,65        
-23,Terminator 2: Judgment Day,(1991),"['Action', 'Sci-Fi']",8.6,/title/tt0103064/,75        
-24,The Silence of the Lambs,(1991),"['Crime', 'Drama', 'Thriller']",8.6,/title/tt0102926/,85        
-25,Star Wars,(1977),"['Action', 'Adventure', 'Fantasy']",8.6,/title/tt0076759/,90        
-26,It's a Wonderful Life,(1946),"['Drama', 'Family', 'Fantasy']",8.6,/title/tt0038650/,89        
-27,Whiplash,(2014),"['Drama', 'Music']",8.5,/title/tt2582802/,88        
-28,The Prestige,(2006),"['Drama', 'Mystery', 'Sci-Fi']",8.5,/title/tt0482571/,66        
-29,The Departed,(2006),"['Crime', 'Drama', 'Thriller']",8.5,/title/tt0407887/,85        
-30,Gladiator,(2000),"['Action', 'Adventure', 'Drama']",8.5,/title/tt0172495/,67        
-31,American History X,(1998),"['Crime', 'Drama']",8.5,/title/tt0120586/,62        
-32,The Usual Suspects,(1995),"['Crime', 'Drama', 'Mystery']",8.5,/title/tt0114814/,77        
-33,Léon: The Professional,(1994),"['Action', 'Crime', 'Drama']",8.5,/title/tt0110413/,64        
-34,The Lion King,(1994),"['Animation', 'Adventure', 'Drama']",8.5,/title/tt0110357/,88        
-35,Back to the Future,(1985),"['Adventure', 'Comedy', 'Sci-Fi']",8.5,/title/tt0088763/,87        
-36,Apocalypse Now,(1979),"['Drama', 'Mystery', 'War']",8.5,/title/tt0078788/,94        
-37,Alien,(1979),"['Horror', 'Sci-Fi']",8.5,/title/tt0078748/,89        
-38,Once Upon a Time in the West,(1968),['Western'],8.5,/title/tt0064116/,80        
-39,Psycho,(1960),"['Horror', 'Mystery', 'Thriller']",8.5,/title/tt0054215/,97        
-40,Rear Window,(1954),"['Mystery', 'Thriller']",8.5,/title/tt0047396/,100        
-41,Casablanca,(1942),"['Drama', 'Romance', 'War']",8.5,/title/tt0034583/,100        
-42,Modern Times,(1936),"['Comedy', 'Drama', 'Romance']",8.5,/title/tt0027977/,96        
-43,City Lights,(1931),"['Comedy', 'Drama', 'Romance']",8.5,/title/tt0021749/,99        
-44,Hamilton,(2020),"['Biography', 'Drama', 'History']",8.4,/title/tt8503618/,90        
-45,Joker,(I) (2019),"['Crime', 'Drama', 'Thriller']",8.4,/title/tt7286456/,59        
-46,Spider-Man: Into the Spider-Verse,(2018),"['Animation', 'Action', 'Adventure']",8.4,/title/tt4633694/,87        
-47,Avengers: Endgame,(2019),"['Action', 'Adventure', 'Drama']",8.4,/title/tt4154796/,78        
-48,Avengers: Infinity War,(2018),"['Action', 'Adventure', 'Sci-Fi']",8.4,/title/tt4154756/,68        
-49,Coco,(I) (2017),"['Animation', 'Adventure', 'Comedy']",8.4,/title/tt2380307/,81        
+,Title,Year,MovieID,Genres,Keywords,Rating,Metascore
+0,The Shawshank Redemption,(1994),/title/tt0111161/,['Drama'],"['wrongful imprisonment', 'prison', 'based on the works of stephen king', 'escape from prison', 'voice over narration']",9.3,81        
+1,The Godfather,(1972),/title/tt0068646/,"['Crime', 'Drama']","['mafia', 'patriarch', 'crime family', 'organized crime', 'gambling syndicate']",9.2,100        
+2,The Dark Knight,(2008),/title/tt0468569/,"['Action', 'Crime', 'Drama']","['dc comics', 'moral dilemma', 'psychopath', 'clown', 'superhero']",9.0,84        
+3,The Lord of the Rings: The Return of the King,(2003),/title/tt0167260/,"['Action', 'Adventure', 'Drama']","['epic', 'orc', 'hobbit', 'ring', 'middle earth']",9.0,94        
+4,Schindler's List,(1993),/title/tt0108052/,"['Biography', 'Drama', 'History']","['accountant', 'champagne', 'villa', 'womanizer', 'soap']",9.0,94        
+5,The Godfather: Part II,(1974),/title/tt0071562/,"['Crime', 'Drama']","['revenge', '1950s', 'corrupt politician', 'cuban revolution', 'lake tahoe nevada']",9.0,90        
+6,12 Angry Men,(1957),/title/tt0050083/,"['Crime', 'Drama']","['jury', 'dialogue driven', 'courtroom', 'trial', 'jury room']",9.0,96        
+7,Pulp Fiction,(1994),/title/tt0110912/,"['Crime', 'Drama']","['nonlinear timeline', 'overdose', 'drug use', 'drug overdose', 'drug dealing']",8.9,94        
+8,Kill Bill: The Whole Bloody Affair,(2011),/title/tt6019206/,"['Action', 'Crime', 'Thriller']","['wedding', 'director&apos;s cut', 'revenge', 'katana', 'sword']",8.8,-
+9,Inception,(2010),/title/tt1375666/,"['Action', 'Adventure', 'Sci-Fi']","['dream', 'ambiguous ending', 'subconscious', 'mindbender', 'surprise ending']",8.8,74        
+10,The Lord of the Rings: The Two Towers,(2002),/title/tt0167261/,"['Action', 'Adventure', 'Drama']","['middle earth', 'hobbit', 'epic', 'wizard', 'mission']",8.8,87        
+11,Fight Club,(1999),/title/tt0137523/,['Drama'],"['surprise ending', 'anti establishment', 'insomnia', 'multiple personality disorder', 'based on novel']",8.8,66        
+12,The Lord of the Rings: The Fellowship of the Ring,(2001),/title/tt0120737/,"['Action', 'Adventure', 'Drama']","['ring', 'quest', 'hobbit', 'middle earth', 'epic']",8.8,92        
+13,Forrest Gump,(1994),/title/tt0109830/,"['Drama', 'Romance']","['vietnam war', 'based on book', 'based on novel', 'vietnam', 'mother']",8.8,82        
+14,The Matrix,(1999),/title/tt0133093/,"['Action', 'Sci-Fi']","['artificial reality', 'war with machines', 'simulated reality', 'dystopia', 'post apocalypse']",8.7,73        
+15,Goodfellas,(1990),/title/tt0099685/,"['Biography', 'Crime', 'Drama']","['gangster', 'mafia', 'organized crime', 'sadistic psychopath', 'rise and fall']",8.7,90        
+16,Star Wars: Episode V - The Empire Strikes Back,(1980),/title/tt0080684/,"['Action', 'Adventure', 'Fantasy']","['famous twist', 'part of trilogy', 'the force', 'duel', 'rescue']",8.7,82        
+17,One Flew Over the Cuckoo's Nest,(1975),/title/tt0073486/,['Drama'],"['nurse', 'escape', 'tragicomedy', 'native american', 'mental illness']",8.7,84        
+18,Top Gun: Maverick,(2022),/title/tt1745960/,"['Action', 'Drama']","['fighter jet', 'sequel', 'u.s. navy', 'fighter aircraft', 'pilot']",8.6,78        
+19,Interstellar,(2014),/title/tt0816692/,"['Adventure', 'Drama', 'Sci-Fi']","['astronaut', 'saving the world', 'gravity', 'relativity', 'wormhole']",8.6,74        
+20,Saving Private Ryan,(1998),/title/tt0120815/,"['Drama', 'War']","['rescue mission', 'd day', 'year 1944', 'u.s. army', '1940s']",8.6,91        
+21,The Green Mile,(1999),/title/tt0120689/,"['Crime', 'Drama', 'Fantasy']","['death row inmate', 'good versus evil', 'prison guard', 'death row', 'accused of murder']",8.6,61        
+22,Se7en,(1995),/title/tt0114369/,"['Crime', 'Drama', 'Mystery']","['serial killer', 'detective', 'serial murder', 'seven deadly sins', 'murder']",8.6,65        
+23,Terminator 2: Judgment Day,(1991),/title/tt0103064/,"['Action', 'Sci-Fi']","['time travel', 'future', 'artificial intelligence', 'mother son relationship', 'sequel']",8.6,75        
+24,The Silence of the Lambs,(1991),/title/tt0102926/,"['Crime', 'Drama', 'Thriller']","['serial killer', 'psycho thriller', 'stuck in a well', 'psychopath', 'bad guy wins']",8.6,85        
+25,Star Wars,(1977),/title/tt0076759/,"['Action', 'Adventure', 'Fantasy']","['rebellion', 'galactic war', 'princess', 'lightsaber', 'space opera']",8.6,90        
+26,It's a Wonderful Life,(1946),/title/tt0038650/,"['Drama', 'Family', 'Fantasy']","['alternate history', 'small town life', 'christmas', 'angel on earth', 'guardian angel']",8.6,89        
+27,Whiplash,(2014),/title/tt2582802/,"['Drama', 'Music']","['drummer', 'music school', 'teacher student relationship', 'new york city', 'drum solo']",8.5,88        
+28,The Prestige,(2006),/title/tt0482571/,"['Drama', 'Mystery', 'Sci-Fi']","['illusion', 'magician', 'rivalry', 'magic', 'death by drowning']",8.5,66        
+29,The Departed,(2006),/title/tt0407887/,"['Crime', 'Drama', 'Thriller']","['police', 'mobster', 'irish mafia', 'organized crime', 'scene of the crime']",8.5,85        
+30,Gladiator,(2000),/title/tt0172495/,"['Action', 'Adventure', 'Drama']","['roman empire', 'gladiator', 'slavery', 'combat', 'battlefield']",8.5,67        
+31,American History X,(1998),/title/tt0120586/,"['Crime', 'Drama']","['neo nazi', 'prison', 'hatred', 'racism', 'murder']",8.5,62        
+32,The Usual Suspects,(1995),/title/tt0114814/,"['Crime', 'Drama', 'Mystery']","['surprise ending', 'criminal mastermind', 'criminal', 'suspect', 'unreliable narrator']",8.5,77        
+33,Léon: The Professional,(1994),/title/tt0110413/,"['Action', 'Crime', 'Drama']","['hitman', 'girl', 'teenage girl', 'loss of family', 'neo noir']",8.5,64        
+34,The Lion King,(1994),/title/tt0110357/,"['Animation', 'Adventure', 'Drama']","['africa', 'king', 'lion', 'shakespearean', 'prince']",8.5,88        
+35,Back to the Future,(1985),/title/tt0088763/,"['Adventure', 'Comedy', 'Sci-Fi']","['time travel', 'time machine', 'delorean', 'future', 'time travel comedy']",8.5,87        
+36,Apocalypse Now,(1979),/title/tt0078788/,"['Drama', 'Mystery', 'War']","['vietnam', 'vietnam war', 'jungle', 'insanity', 'secret mission']",8.5,94        
+37,Alien,(1979),/title/tt0078748/,"['Horror', 'Sci-Fi']","['alien', 'spaceship', 'outer space', 'female protagonist', 'minimal cast']",8.5,89        
+38,Once Upon a Time in the West,(1968),/title/tt0064116/,['Western'],"['harmonica', 'former prostitute', 'arizona territory', 'yuma territorial prison', 'widow']",8.5,80        
+39,Psycho,(1960),/title/tt0054215/,"['Horror', 'Mystery', 'Thriller']","['motel', 'shower', 'money', 'maniac', 'stabbed with a knife']",8.5,97        
+40,Rear Window,(1954),/title/tt0047396/,"['Mystery', 'Thriller']","['wheelchair', 'voyeur', 'apartment', 'amateur detective', 'based on short story']",8.5,100        
+41,Casablanca,(1942),/title/tt0034583/,"['Drama', 'Romance', 'War']","['nazi', 'love triangle', 'casablanca morocco', 'nightclub', 'anti nazi']",8.5,100        
+42,Modern Times,(1936),/title/tt0027977/,"['Comedy', 'Drama', 'Romance']","['factory', 'actor director writer', 'music score composed by director', 'jail', 'satire']",8.5,96        
+43,City Lights,(1931),/title/tt0021749/,"['Comedy', 'Drama', 'Romance']","['slapstick comedy', 'pantomime', 'music score composed by director', 'the little tramp character', 'car']",8.5,99        
+44,Hamilton,(2020),/title/tt8503618/,"['Biography', 'Drama', 'History']","['hip hop', 'american history', 'alexander hamilton character', 'cultural appropriation', 'revolutionary war']",8.4,90        
+45,Joker,(I) (2019),/title/tt7286456/,"['Crime', 'Drama', 'Thriller']","['mental illness', 'evil clown', 'stand up comedian', 'nihilism', 'clown']",8.4,59        
+46,Spider-Man: Into the Spider-Verse,(2018),/title/tt4633694/,"['Animation', 'Action', 'Adventure']","['teenage superhero', 'superhero', 'multiverse', 'wisecrack humor', 'posthumous cameo']",8.4,87        
+47,Avengers: Endgame,(2019),/title/tt4154796/,"['Action', 'Adventure', 'Drama']","['time travel', 'superhero', 'super villain', 'cosmic', 'marvel cinematic universe']",8.4,78        
+48,Avengers: Infinity War,(2018),/title/tt4154756/,"['Action', 'Adventure', 'Sci-Fi']","['death of recurring character', 'supervillain', 'superhero', 'ensemble cast', 'marvel cinematic universe']",8.4,68        
+49,Coco,(I) (2017),/title/tt2380307/,"['Animation', 'Adventure', 'Comedy']","['afterlife', 'day of the dead', 'musician', 'death', 'mexico']",8.4,81        
