@@ -10,7 +10,7 @@ import re
 # Top 100 movie database
 # https://www.imdb.com/search/title/?title_type=feature&num_votes=10000,&countries=us&view=simple&sort=user_rating,desc&start=0&ref_=adv_nxt
 
-def DataToCSV():
+def data_to_csv():
 
     titles = []
     years = []
@@ -46,11 +46,11 @@ def DataToCSV():
             movieIDS.append(movieID)
 
             # Scrape the genres from the movie ID
-            genre = GetDataByURL(movieID, 'genre')
+            genre = get_data_by_url(movieID, 'genre')
             genres.append(genre)
 
             # Scrape the keywords from the movie ID
-            keyword = GetDataByURL(movieID, 'keywords')
+            keyword = get_data_by_url(movieID, 'keywords')
             keywords.append(keyword.split(','))
 
             # Scraping the rating
@@ -72,7 +72,7 @@ def DataToCSV():
 
     return movies
 
-def GetDataByURL(link, dataType):
+def get_data_by_url(link, dataType):
 
     session = requests.Session()
     retry = Retry(connect=3, backoff_factor=0.5)
@@ -93,7 +93,7 @@ def GetDataByURL(link, dataType):
         return "Na"
 
 def main():
-    movies = DataToCSV()
+    movies = data_to_csv()
     print(movies)
     movies.to_csv('movie_data.csv')
 
