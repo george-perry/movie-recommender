@@ -7,7 +7,7 @@ import numpy as np
 import re
 
 
-# Top 100 movie database
+# Top 10000 movies database
 # https://www.imdb.com/search/title/?title_type=feature&num_votes=10000,&countries=us&view=simple&sort=user_rating,desc&start=0&ref_=adv_nxt
 
 def data_to_csv():
