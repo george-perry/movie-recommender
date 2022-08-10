@@ -1,3 +1,4 @@
+from ast import literal_eval
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
@@ -5,16 +6,21 @@ from sklearn.metrics.pairwise import cosine_similarity
 from bs4 import BeautifulSoup
 
 def recommend_from_title(df, title):
-    columns = ['Title', 'Genres', 'Keywords']
-
-    df2 = df.copy()
+    columns = ['Genres', 'Keywords', 'Cast', 'Directors']
 
     for column in columns:
-        df2[column] = df[column].apply(clean_data)
+        df[column] = df[column].apply(literal_eval)
 
-    df2['Combined'] = df2.apply(combine_columns, axis=1)
+    print(df)
 
-    similarity = get_similarity(df2)
+    for column in columns:
+        df[column] = df[column].apply(clean_data)
+
+    df['Combined'] = df.apply(combine_columns, axis=1)
+
+    print(df['Combined'])
+
+    similarity = get_similarity(df)
 
     # Get movie indeces based on title
     indices = pd.Series(df.index, index=df['Title'])
@@ -29,8 +35,8 @@ def recommend_from_title(df, title):
     movie_indices = [i[0] for i in scores]
     return df.iloc[movie_indices]
 
+# Transforms text to a frequency score
 def get_similarity(df):
-
     count = CountVectorizer(stop_words='english')
     count_matrix = count.fit_transform(df['Combined'])
     return cosine_similarity(count_matrix, count_matrix)
@@ -47,4 +53,4 @@ def clean_data(x):
 
 # Create new column in dataframe with combined attributes
 def combine_columns(x):
-    return ''.join(x['Title']) + ' ' + ''.join(x['Genres']) + ' ' + ''.join(x['Keywords'])
+    return ' '.join(x['Genres']) + ' ' + ' '.join(x['Keywords']) + ' ' + ' '.join(x['Cast']) + ' ' + ' '.join(x['Directors'])

@@ -1,3 +1,4 @@
+import keyword
 import requests, json
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
@@ -15,10 +16,12 @@ def data_to_csv():
     titles = []
     years = []
     movieIDS = []
+    ratings = []
     genres = []
     keywords = []
-    ratings = []
-    metascores = []
+    cast = []
+    directors = []
+    images = []
 
     pages = np.arange(1, 7145, 50)
     # pages  = np.arange(1,2,1)
@@ -36,7 +39,7 @@ def data_to_csv():
             # Scraping the movie's name
             name = container.h3.a.text
             titles.append(name)
-            
+
             # Scraping the movie's year
             year = container.h3.find('span', class_='lister-item-year').text
             years.append(year)
@@ -45,34 +48,44 @@ def data_to_csv():
             movieID = container.h3.find('a', href = re.compile(r'[/]([a-z]|[A-Z])\w+')).attrs['href']
             movieIDS.append(movieID)
 
-            # Scrape the genres from the movie ID
-            genre = get_data_by_url(movieID, 'genre')
-            genres.append(genre)
-
-            # Scrape the keywords from the movie ID
-            keyword = get_data_by_url(movieID, 'keywords')
-            keywords.append(keyword.split(','))
-
             # Scraping the rating
             rating = float(container.strong.text)
             ratings.append(rating)
-            
-            # Scraping the metascore
-            m_score = container.find('span', class_='metascore').text if container.find('span', class_='metascore') else 'Na'
-            metascores.append(m_score)
+
+            # Make request to movieID specific iMDB webpages - scrape & return final data
+
+            urlData = get_data_by_url(movieID)
+
+            if urlData != "NaN":
+                genres.append(urlData['genre'])
+                keywords.append(urlData['keywords'].split(','))
+                cast.append(urlData['cast'])
+                directors.append(urlData['director'])
+                images.append(urlData['image'])
+            else:
+                genres.append("NaN")
+                keywords.append("NaN")
+                cast.append("NaN")
+                directors.append("NaN")
+                images.append("NaN")
+
+            print(name)
+            print(urlData)
 
     movies = pd.DataFrame({'Title':titles,
-                        'Year':years,
-                        'MovieID':movieIDS,
-                        'Genres':genres,
-                        'Keywords':keywords,
-                        'Rating':ratings,
-                        'Metascore':metascores,
+        'Year':years,
+        'MovieID':movieIDS,
+        'Rating':ratings,
+        'Genres':genres,
+        'Keywords':keywords,
+        'Cast':cast,
+        'Directors':directors,
+        'Images':images,
     })
 
     return movies
 
-def get_data_by_url(link, dataType):
+def get_data_by_url(link):
 
     session = requests.Session()
     retry = Retry(connect=3, backoff_factor=0.5)
@@ -85,12 +98,41 @@ def get_data_by_url(link, dataType):
     soup = BeautifulSoup(session.content, "html.parser")
     results = soup.find("script", type="application/ld+json")
 
+    urlData = dict.fromkeys(["genre", "keywords", "cast", "director", "image"])
+
     if results != None:
         data = json.loads(results.string)
-        return data[dataType]
+
+        try:
+            urlData["genre"] = data['genre']
+        except:
+            urlData["genre"] = "NaN"
+
+        try:
+            urlData["keywords"] = data['keywords']
+        except:
+            urlData["keywords"] = "NaN"
+    
+        try:
+            urlData["cast"] = [d["name"] for d in data['actor'][0:]]
+        except:
+            urlData["cast"] = "NaN"
+
+        try:
+            urlData["director"] = [d["name"] for d in data['director'][0:]]
+        except:
+            urlData["director"] = "NaN"
+
+        try:
+            urlData["image"] = data['image']
+        except:
+            urlData["image"] = "NaN"
 
     else:
-        return "Na"
+        return "NaN"
+
+    return urlData
+    
 
 def main():
     movies = data_to_csv()
