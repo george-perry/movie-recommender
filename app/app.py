@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from recommend import recommend_from_title
-from pathlib import Path
+import pathlib
 
 
 def main_page(movies):
@@ -38,10 +38,9 @@ def main_page(movies):
 
 def main():
 
-    # p = Path(__file__).parents / 'data/movie_data.csv'
-    # print(p)
+    p = pathlib.Path(__file__).parent.parent.resolve() / "data/movie_data.csv"
 
-    movies = pd.read_csv('data/movie_data.csv', index_col=0)
+    movies = pd.read_csv(p, index_col=0)
 
     movies = movies.drop_duplicates(subset='Title', keep='first', ignore_index=True)
     main_page(movies)
