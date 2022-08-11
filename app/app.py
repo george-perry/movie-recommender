@@ -5,10 +5,16 @@ from recommend import recommend_from_title
 def main_page(movies):
 
     st.title("Movie Recommendations")
-    st.text("Type a movie below to receive recommendations!")
+    st.write("Type a movie below to receive recommendations!")
 
     movie = st.selectbox("Select a Movie", movies['Title'])
-    recommended_movies = recommend_from_title(movies, movie)
+
+    if st.checkbox("Filter movies by iMDB rating?"):
+        filterScore = st.slider("Select a range to filter movies based off ratings", 0.0, 10.0, (0.0, 10.0))
+        recommended_movies = recommend_from_title(movies, movie, filterScore)
+
+    else:
+        recommended_movies = recommend_from_title(movies, movie, (0.0, 10.0))
 
     print(movies.loc[movies['Title'] == movie])
     print(recommended_movies)
@@ -23,7 +29,7 @@ def main_page(movies):
         image_title = recommended_movies.iloc[i]['Title']
         image_titles.append(image_title)
             
-    st.image(image_urls, caption=image_titles, width = 200)
+    st.image(image_urls, caption=image_titles, width = 150)
     st.write("")
     st.write("Created by George Perry")
 

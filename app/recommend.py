@@ -5,20 +5,14 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from bs4 import BeautifulSoup
 
-def recommend_from_title(df, title):
+def recommend_from_title(df, title, filter):
     columns = ['Genres', 'Keywords', 'Cast', 'Directors']
 
     for column in columns:
         df[column] = df[column].apply(literal_eval)
-
-    print(df)
-
-    for column in columns:
         df[column] = df[column].apply(clean_data)
 
     df['Combined'] = df.apply(combine_columns, axis=1)
-
-    print(df['Combined'])
 
     similarity = get_similarity(df)
 
@@ -29,11 +23,20 @@ def recommend_from_title(df, title):
     # Get the most similar movies based off selected movie
     scores = list(enumerate(similarity[idx]))
     scores = sorted(scores, key=lambda x: x[1], reverse=True)
-    scores = scores[1:13]
 
-    # Return most similar
-    movie_indices = [i[0] for i in scores]
-    return df.iloc[movie_indices]
+    filtered_indices = []
+
+    for score in scores[1:]:
+        movie = df.iloc[score[0]]
+
+        if movie["Rating"] >= filter[0] and movie["Rating"] <= filter[1]:
+            filtered_indices.append(score[0])
+
+        if len(filtered_indices) >= 16 or score[1] < 0.18:
+            break
+
+    # Return most similar 
+    return df.iloc[filtered_indices]
 
 # Transforms text to a frequency score
 def get_similarity(df):
