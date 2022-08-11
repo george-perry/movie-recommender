@@ -38,8 +38,7 @@ def main_page(movies):
 
 def main():
 
-    p = pathlib.Path(__file__).parent.parent.resolve() / "data/movie_data.csv"
-
+    p = pathlib.Path(__file__).resolve().parent.parent / "data/movie_data.csv"
     movies = pd.read_csv(p, index_col=0)
 
     movies = movies.drop_duplicates(subset='Title', keep='first', ignore_index=True)
