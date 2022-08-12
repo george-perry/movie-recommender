@@ -6,7 +6,7 @@ import pathlib
 
 def main_page(movies):
 
-    st.title("Movie Recommendations")
+    st.title("Movie Recommendations") 
     st.write("Type a movie below to receive recommendations!")
 
     movie = st.selectbox("Select a Movie", movies['Title'])
