@@ -2,7 +2,7 @@
 
 Program that scrapes data from IMDb and recommends movies based off certain genres, directors, actors, and more!
 
-View website at... (in development)
+View website at: https://movie-recommendations-site.herokuapp.com/
 
 ## Goals
 
@@ -13,8 +13,8 @@ View website at... (in development)
 ## Current Progress
 
 * Developed a functioning web scraper to download data
-* Used machine learning (scikit-learn) to produce a similarity score
-* Created a website that recommends movies based off an initial movie and optionally filters by IMDb ratings
+* Used machine learning (scikit-learn) to produce a similarity score based off an initial movie and optionally filters by IMDb ratings
+* Deployed website through Heroku
 
 ## Future goals
 
