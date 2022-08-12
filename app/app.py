@@ -5,7 +5,7 @@ import pathlib
 
 
 def main_page(movies):
-
+    st.set_page_config(page_title="Movie Recommender", page_icon="📀", layout="centered", initial_sidebar_state="auto", menu_items=None)
     st.title("Movie Recommendations") 
     st.write("Type a movie below to receive recommendations!")
 
