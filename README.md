@@ -2,7 +2,7 @@
 
 Program that scrapes data from IMDb and recommends movies based off certain genres, directors, actors, and more!
 
-View website at: https://movie-recommendations-site.herokuapp.com/
+View website at: https://movie-recommendations.streamlit.app/
 
 ## Goals
 
