@@ -4,6 +4,15 @@ Program that scrapes data from IMDb and recommends movies based off certain genr
 
 View website at: https://movie-recommendations.streamlit.app/
 
+## Setup & Run
+
+Open a terminal and run:
+
+```bash
+pip install -r requirements.txt
+streamlit run app/app.py
+```
+
 ## Goals
 
 * Create a web scraper to save movie data from IMDb
@@ -23,7 +32,7 @@ View website at: https://movie-recommendations.streamlit.app/
 
 ## Authors
 
-George Perry - contact me at gperry@nd.edu
+George Perry - contact me at gep1617@gmail.com
 
 ## License
 
